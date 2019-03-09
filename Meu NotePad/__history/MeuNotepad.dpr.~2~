@@ -1,0 +1,14 @@
+program MeuNotepad;
+
+uses
+  Vcl.Forms,
+  uEditor in 'uEditor.pas' {frmEditor};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmEditor, frmEditor);
+  Application.Run;
+end.

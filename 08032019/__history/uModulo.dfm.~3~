@@ -1,0 +1,113 @@
+object frmModulo: TfrmModulo
+  Left = 0
+  Top = 0
+  ActiveControl = PageControl1
+  Caption = 'Verifica o m'#243'dulo de um n'#250'mero'
+  ClientHeight = 354
+  ClientWidth = 418
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 418
+    Height = 354
+    ActivePage = TabSheet2
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitWidth = 402
+    ExplicitHeight = 292
+    object TabSheet1: TTabSheet
+      Caption = 'Ex. M'#243'dulo'
+      ExplicitWidth = 281
+      ExplicitHeight = 165
+      object Label1: TLabel
+        Left = 24
+        Top = 16
+        Width = 87
+        Height = 13
+        Caption = 'Digite um n'#250'mero:'
+      end
+      object lbRes: TLabel
+        Left = 128
+        Top = 88
+        Width = 3
+        Height = 13
+      end
+      object edNum: TEdit
+        Left = 24
+        Top = 35
+        Width = 121
+        Height = 21
+        NumbersOnly = True
+        TabOrder = 0
+      end
+      object btVerificar: TButton
+        Left = 151
+        Top = 33
+        Width = 75
+        Height = 25
+        Caption = 'Verificar'
+        Default = True
+        TabOrder = 1
+        OnClick = btVerificarClick
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Ex. Quartel'
+      ImageIndex = 1
+      ExplicitWidth = 281
+      ExplicitHeight = 165
+      object Idade: TLabel
+        Left = 24
+        Top = 32
+        Width = 28
+        Height = 13
+        Caption = 'Idade'
+      end
+      object lbResQuartel: TLabel
+        Left = 269
+        Top = 29
+        Width = 3
+        Height = 13
+      end
+      object edIdade: TEdit
+        Left = 61
+        Top = 29
+        Width = 121
+        Height = 21
+        TabOrder = 0
+      end
+      object btQuartel: TButton
+        Left = 188
+        Top = 29
+        Width = 75
+        Height = 68
+        Caption = 'Quartel?'
+        TabOrder = 1
+        OnClick = btQuartelClick
+      end
+      object rgSexo: TRadioGroup
+        Left = 24
+        Top = 56
+        Width = 158
+        Height = 41
+        Caption = 'Sexo'
+        Columns = 2
+        Items.Strings = (
+          'Feminino'
+          'Masculino')
+        TabOrder = 2
+      end
+    end
+  end
+end

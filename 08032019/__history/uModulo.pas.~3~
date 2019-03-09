@@ -1,0 +1,51 @@
+unit uModulo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmModulo = class(TForm)
+    Label1: TLabel;
+    edNum: TEdit;
+    btVerificar: TButton;
+    lbRes: TLabel;
+    procedure btVerificarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmModulo: TfrmModulo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmModulo.btVerificarClick(Sender: TObject);
+var numero : integer;
+begin
+     if edNum.Text = '' then
+     begin
+          MessageDlg('Falta digitar um número',
+                     mtError,
+                     [mbOk],
+                     0);
+          edNum.SetFocus;
+          Exit;
+     end;
+
+     numero := StrToInt(ednum.text);
+
+     if numero < 0 then
+       numero := numero * (-1);
+
+     lbRes.Caption := 'O módulo do número é : ' + IntToStr(numero);
+
+end;
+
+end.

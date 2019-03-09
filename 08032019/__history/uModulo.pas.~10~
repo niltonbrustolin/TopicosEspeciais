@@ -1,0 +1,110 @@
+unit uModulo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TfrmModulo = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    Label1: TLabel;
+    edNum: TEdit;
+    btVerificar: TButton;
+    lbRes: TLabel;
+    Idade: TLabel;
+    edIdade: TEdit;
+    btQuartel: TButton;
+    rgSexo: TRadioGroup;
+    lbResQuartel: TLabel;
+    TabSheet3: TTabSheet;
+    Label2: TLabel;
+    edQtd: TEdit;
+    btWhile: TButton;
+    lstLista: TListBox;
+    procedure btVerificarClick(Sender: TObject);
+    procedure btQuartelClick(Sender: TObject);
+    procedure btWhileClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmModulo: TfrmModulo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmModulo.btQuartelClick(Sender: TObject);
+var idade : integer;
+    sexo : string[1];
+begin
+     if edIdade.Text = '' then
+     begin
+          MessageDlg('Falta digitar uma idade!',
+                     mtError,
+                     [mbOk],
+                     0);
+          edIdade.SetFocus;
+          Exit;
+     end;
+     idade := StrToInt(edIdade.Text);
+     case rgSexo.ItemIndex of
+        0 : sexo := 'F';
+        1 : sexo := 'M';
+     end;
+     if idade < 18 then
+       lbResQuartel.Caption := 'Menor de idade'
+     else
+       if (idade = 18) and (sexo = 'M') then
+         lbResQuartel.Caption := 'Serviço Militar'
+       else
+         lbResQuartel.Caption := 'Maior de Idade';
+end;
+
+procedure TfrmModulo.btVerificarClick(Sender: TObject);
+var numero : integer;
+begin
+     if edNum.Text = '' then
+     begin
+          MessageDlg('Falta digitar um número!',
+                     mtError,
+                     [mbOk],
+                     0);
+          edNum.SetFocus;
+          Exit;
+     end;
+
+     numero := StrToInt(ednum.text);
+
+     if numero < 0 then
+       numero := numero * (-1);
+
+     lbRes.Caption := 'O módulo do número é : ' + IntToStr(numero);
+
+end;
+
+procedure TfrmModulo.btWhileClick(Sender: TObject);
+var qtd, cont, num  : integer;
+begin
+     lstLista.Clear;
+     qtd := StrToInt(edQtd.Text);
+     cont := 1;
+     while cont <= qtd do
+     begin
+          num := StrToInt(InputBox('Leitura',
+                          'Digite um número ('+inttostr(cont)+'): ',
+                          '0'));
+          lstLista.Items.Add('Número ('+inttostr(cont)+'): ' + IntToStr(num));
+          inc(cont);
+     end;
+end;
+
+end.

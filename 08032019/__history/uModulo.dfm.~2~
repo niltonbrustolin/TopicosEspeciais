@@ -1,0 +1,45 @@
+object frmModulo: TfrmModulo
+  Left = 0
+  Top = 0
+  Caption = 'Verifica o m'#243'dulo de um n'#250'mero'
+  ClientHeight = 201
+  ClientWidth = 418
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 24
+    Width = 87
+    Height = 13
+    Caption = 'Digite um n'#250'mero:'
+  end
+  object lbRes: TLabel
+    Left = 128
+    Top = 88
+    Width = 3
+    Height = 13
+  end
+  object edNum: TEdit
+    Left = 24
+    Top = 43
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object btVerificar: TButton
+    Left = 151
+    Top = 41
+    Width = 75
+    Height = 25
+    Caption = 'Verificar'
+    TabOrder = 1
+    OnClick = btVerificarClick
+  end
+end

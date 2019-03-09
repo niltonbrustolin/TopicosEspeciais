@@ -1,0 +1,117 @@
+object frmEditor: TfrmEditor
+  Left = 0
+  Top = 0
+  Caption = 'Meu Notepad'
+  ClientHeight = 201
+  ClientWidth = 418
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object mmTexto: TMemo
+    Left = 0
+    Top = 0
+    Width = 418
+    Height = 201
+    Align = alClient
+    Lines.Strings = (
+      '')
+    ScrollBars = ssBoth
+    TabOrder = 0
+    WordWrap = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 24
+    object Arquivo1: TMenuItem
+      Caption = 'Arquivo'
+      object Novo1: TMenuItem
+        Caption = 'Novo'
+        ShortCut = 16462
+        OnClick = Novo1Click
+      end
+      object Abrir1: TMenuItem
+        Caption = 'Abrir'
+        ShortCut = 16449
+        OnClick = Abrir1Click
+      end
+      object Salvar1: TMenuItem
+        Caption = 'Salvar'
+        ShortCut = 16467
+        OnClick = Salvar1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        ShortCut = 32883
+        OnClick = Sair1Click
+      end
+    end
+    object Editar1: TMenuItem
+      Caption = 'Editar'
+      object Copiar1: TMenuItem
+        Caption = 'Copiar'
+        ShortCut = 16451
+      end
+      object Colar1: TMenuItem
+        Caption = 'Colar'
+        ShortCut = 16470
+      end
+      object Recortar1: TMenuItem
+        Caption = 'Recortar'
+        ShortCut = 16472
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object SelecionarTudo1: TMenuItem
+        Caption = 'Selecionar Tudo'
+        ShortCut = 16468
+      end
+    end
+    object Fonte1: TMenuItem
+      Caption = 'Fonte'
+      OnClick = Fonte1Click
+    end
+    object Sobre1: TMenuItem
+      Caption = 'Sobre'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '*.txt'
+    Filter = 
+      'Arquivos Texto|*.txt|Arquivos Delphi|*.pas|Formul'#225'rios Delphi|*.' +
+      'dfm'
+    InitialDir = 'c:\'
+    Title = 'Abrir Arquivo'
+    Left = 112
+    Top = 40
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '*.txt'
+    Filter = 
+      'Arquivos Texto|*.txt|Arquivos Delphi|*.pas|Formul'#225'rios Delphi|*.' +
+      'dfm'
+    InitialDir = 'c:\'
+    Title = 'Salvar Arquivo'
+    Left = 192
+    Top = 40
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Left = 272
+    Top = 40
+  end
+end

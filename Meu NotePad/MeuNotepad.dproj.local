@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/03/01 20:58:04.000.884,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 20:58:39.000.072,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\uEditor.pas</Transaction>
+    <Transaction>2019/03/01 20:58:39.000.072,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\uEditor.dfm</Transaction>
+    <Transaction>2019/03/01 20:58:45.000.275,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\MeuNotepad.dproj</Transaction>
+    <Transaction>2019/03/01 21:35:27.998,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\ABOUT.pas</Transaction>
+    <Transaction>2019/03/01 21:36:43.967,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\ABOUT.pas</Transaction>
+    <Transaction>2019/03/01 21:36:58.396,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\uABOUT.pas=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\ABOUT.pas</Transaction>
+    <Transaction>2019/03/01 21:36:58.396,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\uABOUT.dfm=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Meu NotePad\ABOUT.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
