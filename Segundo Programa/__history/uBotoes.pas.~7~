@@ -1,0 +1,59 @@
+unit uBotoes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmSegundo = class(TForm)
+    btnHabilitar: TButton;
+    btnEsconder: TButton;
+    btnNova: TButton;
+    btnNewForm: TBitBtn;
+    procedure btnHabilitarClick(Sender: TObject);
+    procedure btnEsconderClick(Sender: TObject);
+    procedure btnNovaClick(Sender: TObject);
+    procedure btnNewFormClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSegundo: TfrmSegundo;
+
+implementation
+
+{$R *.dfm}
+
+uses uSegunda, uTerceiro;
+
+procedure TfrmSegundo.btnEsconderClick(Sender: TObject);
+begin
+   // .visible := False  == Hide
+
+//      btnHabilitar.Caption := 'Mostrar';
+
+   btnHabilitar.visible := not btnHabilitar.visible;
+   btnEsconder.Caption := 'Mostrar';
+end;
+
+procedure TfrmSegundo.btnHabilitarClick(Sender: TObject);
+begin
+   btnEsconder.Enabled := True;
+end;
+
+procedure TfrmSegundo.btnNewFormClick(Sender: TObject);
+begin
+     frmTerceiro.showModal;
+end;
+
+procedure TfrmSegundo.btnNovaClick(Sender: TObject);
+begin
+     frmAuxiliar.Show;
+end;
+
+end.

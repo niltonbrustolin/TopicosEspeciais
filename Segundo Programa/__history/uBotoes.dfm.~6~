@@ -1,0 +1,53 @@
+object frmSegundo: TfrmSegundo
+  Left = 0
+  Top = 0
+  Caption = 'frmSegundo'
+  ClientHeight = 247
+  ClientWidth = 499
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnHabilitar: TButton
+    Left = 8
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Habilitar'
+    TabOrder = 0
+    OnClick = btnHabilitarClick
+  end
+  object btnEsconder: TButton
+    Left = 112
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Esconder'
+    Enabled = False
+    TabOrder = 1
+    OnClick = btnEsconderClick
+  end
+  object btnNova: TButton
+    Left = 8
+    Top = 71
+    Width = 179
+    Height = 25
+    Caption = 'Nova Janela'
+    TabOrder = 2
+    OnClick = btnNovaClick
+  end
+  object btnNewForm: TBitBtn
+    Left = 8
+    Top = 102
+    Width = 179
+    Height = 25
+    Caption = 'btnNewForm'
+    TabOrder = 3
+    OnClick = btnNewFormClick
+  end
+end

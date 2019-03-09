@@ -1,0 +1,68 @@
+object frmPrimeiro: TfrmPrimeiro
+  Left = 400
+  Top = 200
+  ActiveControl = edNome
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Meu Primeiro Programa'
+  ClientHeight = 263
+  ClientWidth = 483
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 48
+    Width = 99
+    Height = 13
+    Caption = 'Digite aqui seu nome'
+  end
+  object edNome: TEdit
+    Left = 32
+    Top = 67
+    Width = 281
+    Height = 21
+    Cursor = crHourGlass
+    TabOrder = 0
+  end
+  object btExecutar: TButton
+    Left = 32
+    Top = 94
+    Width = 75
+    Height = 25
+    Cursor = crHandPoint
+    Caption = 'Clique &aqui!'
+    Default = True
+    TabOrder = 1
+    OnClick = btExecutarClick
+  end
+  object btLimpar: TButton
+    Left = 113
+    Top = 94
+    Width = 75
+    Height = 25
+    Cursor = crSQLWait
+    Caption = '&Limpar'
+    TabOrder = 2
+    OnClick = btLimparClick
+  end
+  object btSair: TButton
+    Left = 400
+    Top = 230
+    Width = 75
+    Height = 25
+    Hint = 'Clique aqui para fechar o programa!'
+    Caption = '&Sair'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = btSairClick
+  end
+end

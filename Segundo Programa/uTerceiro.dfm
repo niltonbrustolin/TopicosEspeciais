@@ -1,0 +1,71 @@
+object frmTerceiro: TfrmTerceiro
+  Left = 0
+  Top = 0
+  Caption = 'frmTerceiro'
+  ClientHeight = 201
+  ClientWidth = 418
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 105
+    Top = 41
+    Width = 207
+    Height = 119
+    Align = alClient
+    BevelInner = bvLowered
+    BevelKind = bkSoft
+    BevelOuter = bvLowered
+    BevelWidth = 4
+    BorderStyle = bsSingle
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 160
+    Width = 418
+    Height = 41
+    Align = alBottom
+    Caption = 'Panel2'
+    TabOrder = 1
+    ExplicitLeft = 152
+    ExplicitTop = 136
+    ExplicitWidth = 185
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 0
+    Width = 418
+    Height = 41
+    Align = alTop
+    Caption = 'Panel3'
+    TabOrder = 2
+    ExplicitLeft = 152
+    ExplicitTop = 40
+    ExplicitWidth = 185
+  end
+  object Panel4: TPanel
+    Left = 0
+    Top = 41
+    Width = 105
+    Height = 119
+    Align = alLeft
+    Caption = 'Panel4'
+    TabOrder = 3
+  end
+  object Panel5: TPanel
+    Left = 312
+    Top = 41
+    Width = 106
+    Height = 119
+    Align = alRight
+    Caption = 'Panel5'
+    TabOrder = 4
+  end
+end

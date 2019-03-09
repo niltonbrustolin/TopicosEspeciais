@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019/03/01 19:13:36.450,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:17:27.528,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uBotoes.pas=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:17:27.528,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uBotoes.dfm=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/03/01 19:17:41.747,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\prjBotoes.dproj=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/03/01 19:37:53.986,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:38:12.044,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uSegunda.pas=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:38:12.044,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uSegunda.dfm=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.dfm</Transaction>
+    <Transaction>2019/03/01 19:46:42.642,=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:46:51.246,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uTerceiro.pas=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.pas</Transaction>
+    <Transaction>2019/03/01 19:46:51.246,C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\uTerceiro.dfm=C:\Users\nilton.brustolin\Documents\Embarcadero\Studio\Projects\Segundo Programa\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

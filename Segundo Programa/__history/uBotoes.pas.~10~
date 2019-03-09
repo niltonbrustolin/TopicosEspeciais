@@ -1,0 +1,85 @@
+unit uBotoes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TfrmSegundo = class(TForm)
+    btnHabilitar: TButton;
+    btnNova: TButton;
+    btnNewForm: TBitBtn;
+    Panel1: TPanel;
+    Button1: TButton;
+    btnEsconder: TButton;
+    chkNegrito: TCheckBox;
+    Label1: TLabel;
+    chkItalico: TCheckBox;
+    procedure btnHabilitarClick(Sender: TObject);
+    procedure btnEsconderClick(Sender: TObject);
+    procedure btnNovaClick(Sender: TObject);
+    procedure btnNewFormClick(Sender: TObject);
+    procedure chkNegritoClick(Sender: TObject);
+    procedure chkItalicoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSegundo: TfrmSegundo;
+
+implementation
+
+{$R *.dfm}
+
+uses uSegunda, uTerceiro;
+
+procedure TfrmSegundo.btnEsconderClick(Sender: TObject);
+begin
+   // .visible := False  == Hide
+
+//      btnHabilitar.Caption := 'Mostrar';
+
+   btnHabilitar.visible := not btnHabilitar.visible;
+   if btnHabilitar.Visible then
+     btnEsconder.Caption := 'Esconder'
+   else
+     btnEsconder.Caption := 'Mostrar';
+end;
+
+procedure TfrmSegundo.btnHabilitarClick(Sender: TObject);
+begin
+   btnEsconder.Enabled := True;
+end;
+
+procedure TfrmSegundo.btnNewFormClick(Sender: TObject);
+begin
+     frmTerceiro.showModal;
+end;
+
+procedure TfrmSegundo.btnNovaClick(Sender: TObject);
+begin
+     frmAuxiliar.Show;
+end;
+
+procedure TfrmSegundo.chkItalicoClick(Sender: TObject);
+begin
+     if chkItalico.Checked then
+       Label1.Font.Style := Label1.Font.Style + [fsItalic]
+     else  //antes else NAO vai ponto e vírgula
+       Label1.Font.Style := Label1.Font.Style - [fsItalic];
+end;
+
+procedure TfrmSegundo.chkNegritoClick(Sender: TObject);
+begin
+     if chkNegrito.Checked then
+       Label1.Font.Style := Label1.Font.Style + [fsBold]
+     else  //antes else NAO vai ponto e vírgula
+       Label1.Font.Style := Label1.Font.Style - [fsBold];
+end;
+
+end.

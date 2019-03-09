@@ -1,0 +1,14 @@
+program prjBotoes;
+
+uses
+  Vcl.Forms,
+  uBotoes in 'uBotoes.pas' {frmSegundo};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmSegundo, frmSegundo);
+  Application.Run;
+end.

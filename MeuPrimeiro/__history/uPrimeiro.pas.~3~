@@ -1,0 +1,41 @@
+unit uPrimeiro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPrimeiro = class(TForm)
+    Label1: TLabel;
+    edNome: TEdit;
+    btExecutar: TButton;
+    Button1: TButton;
+    procedure btExecutarClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrimeiro: TfrmPrimeiro;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrimeiro.btExecutarClick(Sender: TObject);
+begin
+     ShowMessage('Seja bem-vindo: ' + edNome.Text);
+end;
+
+procedure TfrmPrimeiro.Button1Click(Sender: TObject);
+begin
+     edNome.Clear;
+     edNome.SetFocus;
+end;
+
+end.
